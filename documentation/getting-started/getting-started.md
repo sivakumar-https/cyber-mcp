@@ -1,23 +1,22 @@
 ---
-description: Set up your account and ship your first project in minutes.
+description: Set up your workspace and connect your first security data source.
 icon: rocket-launch
 ---
 
 # Getting started
 
-New to the platform? These pages walk you through everything you need to know to ship something real.
+Use these pages to set up Cyber MD and begin triaging security signals.
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><h4><i class="fa-rocket-launch" style="color:$primary;">:rocket-launch:</i></h4></td><td><strong>Quickstart</strong></td><td>Go from sign-up to your first deploy in under five minutes.</td></tr><tr><td><h4><i class="fa-compass" style="color:$primary;">:compass:</i></h4></td><td><strong>Your first project</strong></td><td>A guided walkthrough that takes you from an empty workspace to a configured, deployed project.</td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><h4><i class="fa-bolt" style="color:$primary;">:bolt:</i></h4></td><td><strong>Quickstart</strong></td><td>Connect a source and triage your first alert.</td></tr><tr><td><h4><i class="fa-compass" style="color:$primary;">:compass:</i></h4></td><td><strong>Your first investigation</strong></td><td>Move from an alert to a documented case.</td></tr></tbody></table>
 
 ## What you'll need
 
 Before you start, make sure you have:
 
-* [x] An account on the platform (free plans work fine)
-* [x] A repository or local project you'd like to deploy
-* [x] A few minutes of uninterrupted time
+* [x] A Cyber MD account
+* [x] Administrator access to one supported security source
+* [x] An owner for alert triage
 
 {% hint style="info" %}
-If you're evaluating the platform for your team rather than yourself, jump to [Core concepts](https://app.gitbook.com/s/eJVYZ1Jgts0SSNXN75RL/core-concepts "mention") first — it'll save time when you set things up properly.
+Review [core-concepts.md](../core-concepts/core-concepts.md "mention") before inviting additional analysts.
 {% endhint %}
-

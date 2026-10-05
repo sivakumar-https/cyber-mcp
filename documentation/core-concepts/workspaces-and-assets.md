@@ -1,35 +1,35 @@
 ---
-description: How workspaces and projects fit together, and when to create which.
+description: How workspaces organize security sources, assets, and cases.
 icon: sitemap
 ---
 
-# Workspaces and projects
+# Workspaces and assets
 
-Workspaces and projects are the two containers that organise everything on the platform. Understanding the relationship between them makes the rest of the product much easier to navigate.
+Workspaces organize your security operations. They contain members, data sources, assets, alerts, and cases.
 
 ## The hierarchy
 
-A workspace contains projects. Projects contain deploys, environment variables, and members.
+A workspace contains connected sources. Sources report on assets and produce findings or alerts.
 
 ```mermaid
 graph TD
-  A[Account] --> W1[Workspace: Acme]
-  A --> W2[Workspace: Personal]
-  W1 --> P1[Project: Marketing site]
-  W1 --> P2[Project: Customer portal]
-  W1 --> P3[Project: Internal API]
-  P1 --> D1[Production deploy]
-  P1 --> D2[Preview deploys]
+  A[Account] --> W1[Workspace: Security Operations]
+  W1 --> S1[Identity source]
+  W1 --> S2[Endpoint source]
+  S1 --> AS[Assets]
+  S2 --> AS
+  AS --> AL[Alerts]
+  AL --> C[Cases]
 ```
 
 ## Workspaces
 
-A workspace is the top-level container for a team's work. It owns:
+A workspace is the top-level container for a security team. It owns:
 
 * The list of members and their roles
-* The billing relationship and plan
-* Workspace-level settings like SSO and audit logs
-* All projects created within it
+* Connected data sources and their configuration
+* Asset inventory, alerts, and cases
+* Workspace-level settings and audit history
 
 {% tabs %}
 {% tab title="Personal" %}

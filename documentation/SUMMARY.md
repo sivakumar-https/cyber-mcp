@@ -1,17 +1,17 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [Cyber MD](README.md)
 
 ## Getting Started
 
 * [Getting started](getting-started/getting-started.md)
 * [Quickstart](getting-started/quickstart.md)
-* [Your first project](getting-started/your-first-project.md)
+* [Your first investigation](getting-started/your-first-investigation.md)
 
 ## Core concepts
 
 * [Core concepts](core-concepts/core-concepts.md)
-* [Workspaces and projects](core-concepts/workspaces-and-projects.md)
+* [Workspaces and assets](core-concepts/workspaces-and-assets.md)
 * [Permissions](core-concepts/permissions.md)
 
 ## Guides

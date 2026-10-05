@@ -1,14 +1,14 @@
 ---
-description: Go from sign-up to your first deploy in under five minutes.
+description: Connect a source and triage your first alert.
 icon: bolt
 ---
 
 # Quickstart
 
-This quickstart gets you to your first deploy as fast as possible. We'll skip most of the configuration — you can refine things later once you have something running.
+This quickstart connects one source and establishes a basic triage workflow.
 
 {% hint style="success" %}
-**Estimated time: 5 minutes.** All you need is an account and a project to deploy.
+**Estimated time: 10 minutes.** You need an account and source administrator access.
 {% endhint %}
 
 ## Steps
@@ -17,67 +17,54 @@ This quickstart gets you to your first deploy as fast as possible. We'll skip mo
 {% step %}
 #### Create your workspace
 
-Sign in and create a new workspace. The workspace name appears in URLs and email notifications, so pick something recognisable.
+Sign in and create a workspace for one security team or business unit. Use a clear name.
 
-```
-yourcompany
-```
+`Northstar Security`
 {% endstep %}
 
 {% step %}
 #### Connect a source
 
-Link a repository from your version control provider, or upload a project directly.
+Open **Settings → Data sources** and select your source. Grant the minimum read permissions required.
 
 {% tabs %}
-{% tab title="Repository" %}
-Click **Connect repository**, authenticate with your provider, and select the repository to import. The platform will detect your framework automatically.
+{% tab title="Endpoint security" %}
+Connect your endpoint provider. Cyber MD begins ingesting alerts after authorization.
 {% endtab %}
 
-{% tab title="Upload" %}
-Drag and drop a project folder, or use the CLI:
-
-```bash
-platform deploy ./my-project
-```
+{% tab title="Cloud" %}
+Connect a cloud account with a read-only role. Select the subscriptions or projects to monitor.
 {% endtab %}
 
-{% tab title="Template" %}
-Browse the template gallery and click **Use template**. A new project will be created from the template in your workspace.
+{% tab title="Identity" %}
+Connect your identity provider to ingest sign-in, directory, and risk events.
 {% endtab %}
 {% endtabs %}
 {% endstep %}
 
 {% step %}
-#### Configure your build
+#### Set alert routing
 
-Most projects work with the auto-detected settings. If yours doesn't, override them in **Project settings → Build**.
+Assign an owner for new alerts. Choose a queue that your team monitors.
 
-```yaml
-build:
-  command: npm run build
-  output: dist/
-  node: 20
-```
+Start with `Security Operations` as the default queue.
 {% endstep %}
 
 {% step %}
-#### Deploy
+#### Triage an alert
 
-Hit **Deploy**. Your project will build and go live at a generated subdomain. You can promote it to production or add a custom domain at any time.
+Open **Alerts** and select a new alert. Review the affected asset, evidence, and related activity. Set a status, owner, and priority.
 
 {% hint style="info" %}
-First builds typically take 1–3 minutes. Subsequent builds are faster because dependencies are cached.
+Do not close an alert until you record the reason and any containment action.
 {% endhint %}
 {% endstep %}
 {% endstepper %}
 
 ## What's next?
 
-You've shipped something — now make it yours.
-
-{% content-ref url="../guides/custom-domains.md" %}
-[custom-domains.md](../guides/custom-domains.md)
+{% content-ref url="your-first-investigation.md" %}
+[your-first-investigation.md](your-first-investigation.md)
 {% endcontent-ref %}
 
 {% content-ref url="../core-concepts/permissions.md" %}

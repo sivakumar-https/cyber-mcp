@@ -91,7 +91,7 @@ A deploy created automatically for a branch or pull request, served at a unique 
 
 <summary><strong>Project</strong></summary>
 
-A deployable unit. Each project has its own source, builds, deploys, environment, and domains. Projects are isolated from each other within a workspace. See [workspaces-and-projects.md](../core-concepts/workspaces-and-projects.md "mention").
+A deployable unit. Each project has its own source, builds, deploys, environment, and domains. Projects are isolated from each other within a workspace. See [workspaces-and-assets.md](../core-concepts/workspaces-and-assets.md "mention").
 
 </details>
 
@@ -135,7 +135,7 @@ The event that starts an automation — for example, `deploy.succeeded` or `webh
 
 <summary><strong>Workspace</strong></summary>
 
-The top-level container for a team's work. Owns billing, members, and projects. See [workspaces-and-projects.md](../core-concepts/workspaces-and-projects.md "mention").
+The top-level container for a team's work. Owns billing, members, and projects. See [workspaces-and-assets.md](../core-concepts/workspaces-and-assets.md "mention").
 
 </details>
 

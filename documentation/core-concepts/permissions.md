@@ -1,26 +1,25 @@
 ---
-description: Roles, permissions, and how access flows from workspace to project.
+description: Roles and access controls for your security workspace.
 icon: lock
 ---
 
 # Permissions
 
-Every member of a workspace has a role. The role determines what actions they can perform across the workspace and its projects.
+Every workspace member has a role. Roles control access to sources, investigations, and administration.
 
 ## Roles overview
 
-There are five roles, ordered from least to most privileged:
+Use these roles to separate investigation from administration:
 
-| Role         | Best for                                                        |
-| ------------ | --------------------------------------------------------------- |
-| **Guest**    | External stakeholders who only need to see published deploys    |
-| **Viewer**   | Internal users who need read-only access to drafts and settings |
-| **Editor**   | Builders who actively work on projects                          |
-| **Reviewer** | People who comment and approve, but don't push changes          |
-| **Admin**    | Workspace owners and team leads                                 |
+| Role          | Best for                                        |
+| ------------- | ----------------------------------------------- |
+| **Viewer**    | Stakeholders who need read-only visibility      |
+| **Analyst**   | Team members who triage alerts and manage cases |
+| **Responder** | Analysts authorized to run response actions     |
+| **Admin**     | Workspace owners and security administrators    |
 
 {% hint style="info" %}
-Guests don't count towards your member limit, making them ideal for read-only stakeholders.
+Grant the least privilege needed. Review responder access regularly.
 {% endhint %}
 
 ## Permission matrix
